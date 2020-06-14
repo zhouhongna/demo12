@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>乐游辽宁</title>
+        <style>
+        *{
+          padding:0;
+          margin:0;
+        }
+        a{
+          text-decoration:none;
+        }
+        li{
+          list-style:none;
+        }
+        .clearFix:after{
+        content:'';
+        display:block;
+        height:0;
+        clear:both;
+    }
+        .top{
+          width:1230px;
+          height:101px;
+          text-align:center;
+          line-height:101px;
+          margin:auto;
+          padding-left:369px;
+        }
+        .top1{
+          width:170px;
+          height:39px;
+          line-height:39px;
+          padding-top:33px;
+          display:inline-block;
+          float:left;
+
+        }
+        .top1 p{
+          font-size:40px;
+          font-family:Microsoft YaHei;
+          font-weight:bold;
+          color:orange;
+          }
+        .top2 {
+          margin-left: 50px;
+          width:241px;
+          height:18px;
+          padding-top:42px;
+          display:inline-block;
+          float:left;
+          padding-right:167px;
+        }
+        .top2 li{
+          width:33%;
+          height:30px;
+          display:inline-block;
+          float:left;
+          line-height:18px;
+          text-align:center;
+          position:relative;
+        }
+        .top2 a{
+          font-size:18px;
+          font-family:Microsoft YaHei;
+          font-weight:400;
+          color:rgba(5,5,5,1);
+        }
+        .top3{
+          width:411px;
+          height:40px;
+          display:inline-block;
+          float:left;
+          padding-top:31px;
+          padding-right:31px;
+        }
+        form{
+          width:360px;
+          height:40px;
+          line-height:31px;
+          display:inline-block;
+          float:left;
+        }
+        input{
+          width:356px;
+          height:36px;
+          font-size:14px;
+          font-family:Microsoft YaHei;
+          color:rgba(191,191,191,1);
+        }
+        .top4{
+          width:51px;
+          height:40px;
+          background:rgba(0,164,255,1);
+          display:inline-block;
+          float:right;
+        }
+        a .top6{
+          position:relative;
+          top:10px;
+          width:54px;
+          height:2px;
+          background:rgba(0,164,255,1);
+          margin:auto;  
+          display:none;       
+        }
+        a:hover .top6{
+          display:block;
+        }
+        .top7{
+          width:19px;
+          height:19px;
+          font-size:20px;
+          font-family:FontAwesome;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          line-height:23px;
+          text-align:center;
+          margin:auto;
+        }
+        .center{
+          width:1200px;
+          height:420px;
+        }
+        .center1{
+          background:url(banner.png);
+          background-repeat: no-repeat;
+          display:inline-block;
+          margin-left: 360px;
+          height:420px;
+          width:1200px;
+        }
+        .bottom1{
+          width:1200px;
+          height:60px;
+          background:rgba(255,255,255,1);
+          box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+          margin-left:360px;
+        }
+        .bottom1 ul{
+          width:1105px;
+          height:18px;
+          margin:auto;
+          line-height:18px;
+          padding-top:21px;
+        }
+        .bottom1 li{
+          width:60px;
+          height:18px;
+          display:inline-block;
+        }
+        .bottom_a a{
+          font-size:14px;
+          font-family:Microsoft YaHei;  
+          color:#050505;
+        }
+        .bottom_b a{
+          color:#BFBFBF;
+        }
+        
+        .bottom_a a:hover{
+          color:#00A4FF;
+        }
+        .bottom2{
+          height:19px;
+          width:1169px;
+          margin-left:360px;
+          margin-top:37px;
+        }
+        .bottom2 p{
+          display:inline-block;
+        }
+        .bottom_c{
+          float:right;
+          font-size:12px;
+          font-family:Microsoft YaHei;
+          font-weight:400;
+          margin-right: 10px;
+        }
+
+        .bottom_c a{
+          color: rgba(165,165,165,1);
+        }
+        .bottom_d{
+          font-size:20px;
+          font-family:Microsoft YaHei;
+          font-weight:400;
+          color:rgba(73,73,73,1);
+        }
+    .pic1{
+      height:630px;
+      width:1200px;
+      margin-left:360px;
+      padding-top:21px;
+    }
+    .photo{
+      height:270px;
+      width:228px;
+      background:rgba(255,255,255,1);
+      box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+      display:inline-block;
+      margin-bottom:15px;
+    }
+      .photo img{
+      height:155px;
+      width:228px;
+    }
+    .photo h1{
+      width:185px;
+      height:34px;
+      font-size:14px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      color:rgba(5,5,5,1);
+      line-height:20px;
+      padding-left:60px;
+      padding-right:20px;
+      padding-top:24px;
+      padding-bottom:18px;
+    }
+    .photo h2{
+      width:119px;
+      height:13px;
+      font-size:12px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      color:rgba(255,124,45,1);
+      padding-left:60px;
+    }
+    .pic_a{
+      width:140px;
+      height:19px;
+      font-size:20px;
+      font-family:Microsoft YaHei;
+      font-weight:400;
+      color:rgba(73,73,73,1);
+      display:inline-block;
+      float:left;
+      padding-bottom:28px;
+      padding-top:28px;
+    }
+    .pic_b{
+      width:48px;
+      height:13px;
+      font-size:12px;
+      font-family:Microsoft YaHei;
+      float:right;
+      color:rgba(165,165,165,1);
+      display:inline-block;
+      padding-top:28px;
+      padding-bottom:28px;
+      margin-right: 40px;
+  }
+    .pic1 li{
+      width:109px;
+      height:17px;
+      display:inline-block;
+    }
+    .pic1 ul{
+      width:462px;
+      height:17px;
+      padding-top:26px;
+      line-height:17px;
+      padding-left:291px;
+      margin:0;
+      display:inline-block;
+      padding-bottom:28px;
+
+    }
+    .pic1 a{
+      color:#868686;
+      font-size:16px;
+    }
+    .pic1 a:hover{
+      color:#00A4FF;
+    }
+    
+    .footer {
+      height: 120px;
+      line-height: 120px;
+      background: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    
+    
+
+    </style>
+    </head>
+    <body>
+      <div class="top">
+        <div class="top1">
+          <img src="./logo.png">
+        </div>
+        <div class="top2">
+          <ul>
+            <li><a href="#">景点
+              <div class="top6">
+              </div></a></li>
+            <li><a href="#">美食
+            <div class="top6">
+              </div></a></li>
+            <li><a href="#">购物
+            <div class="top6">
+              </div></a></li>
+          </ul>
+        </div>
+        <div class="top3">
+          <form>
+            <input type="text" value="请输入关键字"/>
+          </form>
+          <div class="top4">
+            <div class="top7">  
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <div class="center1">
+        </div>
+      </div>
+      <div class="bottom1">
+        <ul>
+          <li class="bottom_a"><a href="#">景点</a></li>
+          <li class="bottom_b"><a href="#">|</a></li>
+          <li class="bottom_a"><a href="#">美食</a></li>
+          <li class="bottom_b"><a href="#">|</a></li>
+          <li class="bottom_a"><a href="#">酒店预订</a></li>
+          <li class="bottom_b"><a href="#">|</a></li>
+          <li class="bottom_a"><a href="#">购物</a></li>
+          <li class="bottom_b"><a href="#">|</a></li>
+          <li class="bottom_a"><a href="#">娱乐</a></li>
+          <li class="bottom_b"><a href="#">|</a></li>
+          <li class="bottom_a"><a href="#">问答</a></li>
+          <li class="bottom_b"><a href="#">|</a></li>
+          <li class="bottom_a"><a href="#">游记</a></li>
+        </ul>
+      </div>
+    <div class="bottom2">
+      <p class="bottom_d">景点</p>
+      <p class="bottom_c"><a href="#">查看全部</a></p>
+    </div>
+    <div class="pic1">
+      <div class="photo">
+        <img src="./science-spot1.png">
+        <h1>宁远古城</h1>
+        <h2>中国十佳古城</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot2.png">
+        <h1>九门口长城</h1>
+        <h2>明长城的重要关隘</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot3.png">
+        <h1>觉华岛</h1>
+        <h2>北方佛岛</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot4.png">
+        <h1>龙回头</h1>
+        <h2>乾隆皇帝曾至</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot5.png">
+        <h1>飞天广场</h1>
+        <h2>纪念杨利伟</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot6.png">
+        <h1>张氏帅府</h1>
+        <h2>张学良府邸</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot7.png">
+        <h1>方特欢乐世界</h1>
+        <h2>东方梦幻乐园</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot8.png">
+        <h1>沈阳故宫</h1>
+        <h2>盛京行宫</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot9.png">
+        <h1>发现王国</h1>
+        <h2>主题公园</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot10.png">
+        <h1>九·一八历史博物馆</h1>
+        <h2>反映九·一八事件</h2>
+      </div>
+      <div>
+        <p class="pic_a">美食</p>
+        <p class="pic_b">查看全部</p>
+      </div>
+    </div>
+        <div class="pic1">
+      <div class="photo">
+        <img src="./science-spot11.png">
+        <h1>烤串</h1>
+        <h2>锦州烧烤</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot12.png">
+        <h1>北方冻梨</h1>
+        <h2>口感绵密</h2>
+      </div>
+      <div class="photo">
+        <img src="./science-spot13.png">
+        <h1>烧卖</h1>
+        <h2>劲道、醇香</h2>
+      </div>
+      <div class="photo">
+        <img src="science-spot14.png">
+        <h1>饺子</h1>
+        <h2>口味鲜醇</h2>
+      </div>
+      <div class="photo">
+        <img src="science-spot15.png">
+        <h1>塔糖</h1>
+        <h2>酥脆、清香</h2>
+      </div>
+      
+    <div class="footer">
+      苏ICP备000号、2014-2017 版权所有
+    </div>
+
+
+
+    </body>
+</html>
